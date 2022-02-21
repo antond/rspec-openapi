@@ -1,7 +1,7 @@
 class << RSpec::OpenAPI::DefaultSchema = Object.new
   def build(title)
     {
-      openapi: '3.0.3',
+      openapi: RSpec::OpenAPI.openapi_version,
       info: {
         title: title,
         version: RSpec::OpenAPI.application_version,

@@ -138,6 +138,9 @@ RSpec::OpenAPI.description_builder = -> (example) { example.description }
 
 # Change the example type(s) that will generate schema
 RSpec::OpenAPI.example_types = %i[request]
+
+# Change the OpenAPI version of the generated schema (default: 3.0.3)
+RSpec::OpenAPI.openapi_version = '3.0.3'
 ```
 
 ### How can I add information which can't be generated from RSpec?
